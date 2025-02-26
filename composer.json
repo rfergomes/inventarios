@@ -6,21 +6,33 @@
             "app\\": "app/"
         }
     },
-    "script":{
+    "scripts":{
         "server": "php -S localhost:8000 -t public"
     },
     "server": {
-        "document_root": "public",
-        "router": "public/index.php"
+        "document-root": "public/",
+        "port": 8000,
+        "host": "localhost",
+        "router": "public/index.php",
+        "index": "index.php",
+        "env": {
+            "APP_ENV": "development",
+            "APP_DEBUG": "true"
+        },
+        "timeout": 0
     },
+    
     "authors": [
         {
             "name": "Rodrigo Fernando Gomes Lima",
             "email": "rfergomes@gmail.com"
         }
     ],
-    "require": {},
-    "config":{
+    "require": {
+        "league/plates": "^3.6"
+    },
+    "config": {
         "process-timeout": 0
     }
+    
 }
