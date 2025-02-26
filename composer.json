@@ -1,0 +1,26 @@
+{
+    "name": "rodrigo.lima/inventarios",
+    "description": "Sistema de Inventario para ativo de TI",
+    "autoload": {
+        "psr-4": {
+            "app\\": "app/"
+        }
+    },
+    "script":{
+        "server": "php -S localhost:8000 -t public"
+    },
+    "server": {
+        "document_root": "public",
+        "router": "public/index.php"
+    },
+    "authors": [
+        {
+            "name": "Rodrigo Fernando Gomes Lima",
+            "email": "rfergomes@gmail.com"
+        }
+    ],
+    "require": {},
+    "config":{
+        "process-timeout": 0
+    }
+}
